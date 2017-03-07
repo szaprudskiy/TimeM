@@ -34,3 +34,22 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url("../fonts/OpenSans-ExtraBold.eot");
+    src: url("../fonts/OpenSans-ExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSans-ExtraBold.woff") format("woff"),
+    url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "open-sans-semibold";
+    src: url("../fonts/open-sans-semibold.eot");
+    src: url("../fonts/open-sans-semibold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/open-sans-semibold.woff") format("woff"),
+    url("../fonts/open-sans-semibold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+

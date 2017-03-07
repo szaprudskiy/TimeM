@@ -4,8 +4,9 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-.db{
-	display: none;
+img{
+	max-width: 100%;
+	height: auto;
 }
 a{
 	// text-decoration: none; 
@@ -25,6 +26,7 @@ a{
 html, body{
 	font: 13px 'OpenSansRegular', sans-serif;
 	overflow-x: hidden;
+	background: #f3f3f3;
 }
 // .container{
 // 	width: 100%;
@@ -266,7 +268,9 @@ html, body{
 	}
 	.header-bot{
 		border: 1px solid #e1e2e4;
+		border-width: 1px 0;
 		padding: 25px 0;
+		
 		.watch-list{
 			display: flex;
     		justify-content: space-between;
@@ -301,10 +305,12 @@ html, body{
 		}
 	}
 	.popup-search{
-		//display: none;
+		display: none;
 		&__input{
-			position: relative;
+			position: absolute;
+			z-index: 1;
 			border: 1px solid #0077a2;
+			background: #f3f3f3;
 			margin-top: -1px;
 			border-width: 1px 0;
 			outline: none;
@@ -323,6 +329,208 @@ html, body{
 			left: 95%;
     		top: 25px;
 		}
-	}
 
+	}
+	.db{
+		display: block;
+	}
 }
+// ====HEADER EN====
+// ====MAIN-1====
+
+.main-1{
+	margin: 30px 0 0;
+	.woman-img{
+		position: relative;
+		&__link{
+			position: absolute;
+			top: 134px;
+			//display: block;
+			background: rgba(185, 175, 172, .6);
+			color: #fff;
+			text-transform: uppercase;
+			font-family: "OpenSansBold";
+			width: 100%;
+			text-decoration: none;
+			padding: 25px 0 25px 25px;
+		}
+		&:after{
+			content:"";
+			position: absolute;
+			background: url(../img/arr-right2.png) no-repeat;
+			width: 7px;
+			height: 12px;
+		}
+	}
+	.man-img{
+		position: relative;
+		&__link{
+			position: absolute;
+			top: 0;
+			//display: block;
+			background: rgba(185, 175, 172, .6);
+			color: #fff;
+			text-transform: uppercase;
+			font-family: "OpenSansBold";
+			width: 100%;
+			text-decoration: none;
+			padding: 25px 0 25px 25px;
+		}
+	}
+	.holder-bg{
+		position: relative;
+		&__link{
+			position: absolute;
+			top: 42%;
+    		left: 95%;
+		}
+	}
+}
+// ====MAIN-1 END====
+// ====MAIN-2 ====
+.main-2{
+	.main-2-left{
+		position: relative;
+		top: -88px;
+		&__link{
+			position: absolute;
+			top: 55%;
+    		left: 9%;
+			display: block;
+			color: #fff;
+			background: #0077a2;
+			text-transform: uppercase;
+			font-size: 17px;
+			padding: 10px;
+			text-decoration: none;
+			font-family: "OpenSansBold";
+		}
+	}
+	.main-2-bg-center{
+		position: relative;
+		z-index: 1;
+		 top: -103px;
+   		 left: -41%;
+	}
+	.main-2-bg-right{
+		position: relative;
+		top: 10px;
+		&__link{
+			position: absolute;
+			top: 36%;
+    		left: 42%;
+			display: block;
+			color: #fff;
+			background: #0077a2;
+			text-transform: uppercase;
+			font-size: 17px;
+			padding: 10px;
+			text-decoration: none;
+			font-family: "OpenSansBold";
+		}
+	}
+}
+// ====MAIN-2 END====
+// ====MAIN-3====
+.main-3{
+	&__inner{
+		background: #fff;
+		padding: 40px 20px 30px;
+	}
+	.main-3-left{
+		&__title{
+			font-size: 20px;
+			font-family: "OpenSans-ExtraBold";
+			text-transform: uppercase;
+			margin: 0;
+		}
+		&__text{
+			color: #929292;
+		}
+	}	
+	.main-3-holder{
+		margin: 40px 0 0;
+		&__img{
+			position: relative;
+		}
+		.count-left{
+			position: absolute;
+			z-index: 1;
+			top: 80px;
+			&__value{
+				color: #777676;
+				text-align: center;
+				border: 1px solid #e8e8e8;
+				padding: 5px 8px;
+				background: #fff;
+				font-family: "OpenSansBold";
+				font-size: 14px;
+				p{
+					font-family: "OpenSansRegular";
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.slider{
+		margin: 80px 0 0;
+		display: flex;
+		&__item{
+			border: 1px solid #e8e8e8;
+			padding: 40px 20px 30px;
+			width: 100%;
+			max-width: 216px;
+			height: 305px;
+			border-right-width: 0;
+			position: relative;
+			.stock{
+				position: absolute;
+				top: 0;
+    			left: 0;
+				&__item{
+					color: #fff;
+					background: #186a8a;
+					padding: 12px 3px;
+					margin-bottom: 5px;
+					font-family: "open-sans-semibold";
+				}
+
+				&__item--color{
+					background: #0077a2;
+				}
+
+			}
+			&:last-child{
+				border-right-width: 1px;
+			}	
+		}
+		.holder-description-clocks{
+			display: flex;
+     		justify-content: space-around;
+   			align-items: center;
+   			margin-right: 20px;
+    				
+		}
+		&__text{
+			text-align: center;
+			font-family: "OpenSansBold";
+			color: #6f6f6f;
+			margin: 20px 0;
+		}
+		&__price{
+			color: #186a8a;
+			font-family: "OpenSansBold";
+			text-align: center;
+			font-size: 17px;
+			span{
+				font-size: 14px;
+				color: #a3a3a3;
+				font-family: "OpenSansRegular";
+				text-decoration:line-through;
+			}
+		}
+	}
+}
+
+
+// ====MAIN-3 END====
