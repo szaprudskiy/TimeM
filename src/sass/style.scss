@@ -494,11 +494,9 @@ html, body{
 					margin-bottom: 5px;
 					font-family: "open-sans-semibold";
 				}
-
 				&__item--color{
 					background: #0077a2;
 				}
-
 			}
 			&:last-child{
 				border-right-width: 1px;
@@ -530,7 +528,20 @@ html, body{
 			}
 		}
 	}
+	&__btn-bot{
+		padding: 15px 0;
+		width: 170px;
+		background: #0077a2;
+		text-transform: uppercase;
+		color: #fff;
+		display: block;
+		margin: 30px auto 0;
+		text-align: center;
+		text-decoration: none !important;
+	}
 }
-
-
 // ====MAIN-3 END====
+// ====MAIN-4====
+
+
+// ====MAIN-4 END====

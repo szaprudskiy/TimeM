@@ -9,16 +9,18 @@ $(function(){
 
 
 	$(".slider").slick({
-		responsive: [
-		    {
-		     // breakpoint: 743,
-		      settings: {
-		        slidesToShow: 1,
+		slidesToShow: 3,
 		        slidesToScroll: 3,
 		        infinite: true,
 		        arrows: true
-		      }
-    		}
-    	]
+		
+			// 	responsive: [
+			// 	    {
+			// 	     // breakpoint: 743,
+			// 	      settings: {
+				        
+			// 	      }
+		 //    		}
+		 //    	]
 	})
 })
