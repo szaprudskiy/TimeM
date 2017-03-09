@@ -13,7 +13,7 @@ $(function(){
 		        slidesToScroll: 3,
 		        infinite: true,
 		        arrows: true
-		
+
 			// 	responsive: [
 			// 	    {
 			// 	     // breakpoint: 743,
@@ -22,5 +22,23 @@ $(function(){
 			// 	      }
 		 //    		}
 		 //    	]
+	});
+
+	$(".main-4-slider").slick({
+		slidesToShow: 6,
+		slidesToScroll: 3,
+		infinite: true,
+		arrows: true
+		
+			
+	})
+
+	$(".main-5-slider").slick({
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		infinite: true,
+		arrows: true
+		
+			
 	})
 })
