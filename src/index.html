@@ -23,14 +23,14 @@
 							</div>
 							<nav class="nav">
 								<ul class="nav__list">
-									<li class="nav__item"><a href="javascript:void(0);">Мобильная версия</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Оплата и доставка</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Гарантии</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Магазины</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Сервис</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Кредит</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Акции</a></li>
-									<li class="nav__item"><a href="javascript:void(0);">Программа лояльности</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Мобильная версия</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Оплата и доставка</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Гарантии</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Магазины</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Сервис</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Кредит</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Акции</a></li>
+									<li class="nav__item"><a class="nav__link" href="javascript:void(0);">Программа лояльности</a></li>
 								</ul>
 							</nav>
 						</div>	
@@ -38,10 +38,14 @@
 							<ul class="lang-currency">
 								<li class="lang-currency__item"><a class="lang-currency__link lang-currency__link--icon-arr" href="javascript:void(0);">Рус</a>
 									<ul class="hover-lang">
-										<li class="hover-lang__item"><a class="hover-lang__link" href="javascript:void(0);">eng</a></li>
+										<li class="hover-lang__item"><a class="hover-lang__link " href="javascript:void(0);">Eng</a></li>
 									</ul>
 								</li>
-								<li class="lang-currency__item"><a class="lang-currency__link lang-currency__link--icon-sep" href="javascript:void(0);">Usd</a></li>
+								<li class="lang-currency__item">
+									<ul class="hover-lang--left">
+										<li class="hover-lang__item"><a class="hover-lang__link " href="javascript:void(0);">UAH</a></li>
+									</ul>
+								<a class="lang-currency__link lang-currency__link--icon-sep lang-currency__link--icon-arr" href="javascript:void(0);">Usd</a></li>
 							</ul>
 						</div>
 					</div>
@@ -64,12 +68,19 @@
 								<div class="col-md-5">
 									<div class="holder-compare-liked">
 										<ul class="compare-liked-list">
-											<li class="compare-liked-list__item compare-liked-list__item--compare-icon"><a class="compare-liked-list__link" href="javascript:void(0);">Сравнение</a></li>
-											<li class="compare-liked-list__item compare-liked-list__item--liked-icon"><a class="compare-liked-list__link" href="javascript:void(0);">Избранное</a></li>
+											<li class="compare-liked-list__item "><a class="compare-liked-list__link compare-liked-list__link--compare-icon" href="javascript:void(0);">Сравнение</a></li>
+											<li class="compare-liked-list__item "><a class="compare-liked-list__link compare-liked-list__link--liked-icon" href="javascript:void(0);">Избранное</a></li>
 										</ul>
 										<div class="cart">
 											<span class="cart__ellipse">0</span>
 											<a href="javascript:void(0);"><img src="img/cart.png" alt=""></a>
+										</div>
+										<div class="quickcart">
+											<span class="quickcart__title">Итого:</span>
+											<span class="quickcart__price">$0.00</span>
+											<div class="quickcart__line"></div>
+											<a class="quickcart__cart" href="javascript:void(0);">Корзина</a>
+											<a class="quickcart__clear" href="javascript:void(0);">Очистить</a>
 										</div>
 									</div>
 								</div>
@@ -138,16 +149,18 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="main-2-left">
-						<a href="javascript:void(0);"><img src="img/main2-bg.png" alt=""></a>
+						<a class="total-link" href="javascript:void(0);"><img src="img/main2-bg.png" alt=""></a>
 						<a class="main-2-left__link" href="javascript:void(0);">Купить сейчас</a>
 					</div>
 				</div>
-				<div class="col-md-2">
-				<a href="javascript:void(0);"><img class="main-2-bg-center" src="img/main2-bg-center.png" alt=""></a>
+				<div class="col-md-2 ">
+					<a href="javascript:void(0);"><img class="main-2-bg-center" src="img/main2-bg-center.png" alt=""></a>
 				</div>
 				<div class="col-md-5">
-					<a href="javascript:void(0);"><img class="main-2-bg-right" src="img/main2-bg-right.png" alt=""></a>
-					<a class="main-2-bg-right__link" href="javascript:void(0);">Купить сейчас</a>
+					<div class="holder-main2-right">
+						<a href="javascript:void(0);"><img class="main-2-bg-right" src="img/main2-bg-right.png" alt=""></a>
+						<a class="main-2-bg-right__link" href="javascript:void(0);">Купить сейчас</a>
+					</div>	
 				</div>
 			</div>
 		</div>

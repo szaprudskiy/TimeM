@@ -8,6 +8,16 @@ $(function(){
 	});
 
 
+	var cart = $(".cart"),
+		quickCart = $(".quickcart");
+		
+	cart.on("click", function(e){
+		e.preventDefault();	
+		quickCart.toggleClass("db");
+	});
+
+
+
 	$(".slider").slick({
 		slidesToShow: 3,
 		        slidesToScroll: 3,

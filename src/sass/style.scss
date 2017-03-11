@@ -4,6 +4,10 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+a{
+	text-decoration: none !important;
+}
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -45,7 +49,7 @@ html, body{
 	.header-top{
 		background: #ebebeb;
 		padding: 15px 0;
-		overflow: hidden;
+		// overflow: hidden;
 		.login{
 			position: relative;
 			color: #838383;
@@ -73,7 +77,7 @@ html, body{
 			}
 			&__link{
 				color: #0077a2;
-
+				text-decoration: none;
 			}
 		}
 		.nav{
@@ -98,6 +102,7 @@ html, body{
 			&__link{
 				display: block;
 				color: #838383;
+				text-decoration: none;
 			}
 		}
 		.lang-currency{
@@ -106,15 +111,33 @@ html, body{
 				display: inline-block;
 				position: relative;
 				cursor: pointer;
-				&:hover .hover-lang{
-					left: 30px;
-					z-index: 10;
-					top: 20px;
-				}
 				.hover-lang{
 					position: absolute;
-					left:-9999px;
+
+					left: -9999px;
+					&__item{
+						padding-top: 32px;
+					}
+					&__link{	
+						display: block;
+						background: #0077a2;
+						padding: 10px 23px 10px 10px;
+						color: #fff;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+				}
+				.hover-lang--left{
 					
+					position: absolute;
+					left: -9999px;
+				}
+				&:hover .hover-lang--left{
+					left:20px;
+				}
+				&:hover .hover-lang{
+					left:35px;
+					top: 0px;
 				}
 			}
 
@@ -123,6 +146,7 @@ html, body{
 				text-transform: uppercase;
 				display: block;
 				margin: 0 15px 0 35px;
+				text-decoration: none;
 			}
 			&__link--icon-sep{
 				position: relative;
@@ -208,7 +232,7 @@ html, body{
 						margin: 0;
 					}
 				}
-				&__item--compare-icon{
+				&__link--compare-icon{
 					position: relative;
 					&:before{
 						content: "";
@@ -218,6 +242,13 @@ html, body{
 						height: 12px;
 						left: -20px;
     					top: 2px;
+
+					}
+					&:hover:before{
+    					background: url(../img/compare-icon-hover.png) no-repeat;
+						width: 14px;
+						height: 12px;
+    					
 					}
 					&:after{
 						content: "";
@@ -230,7 +261,8 @@ html, body{
     					right: -11px;
 					}
 				}
-				&__item--liked-icon{
+				&__link--liked-icon{
+					
 					position: relative;
 					&:before{
 						content: "";
@@ -240,9 +272,16 @@ html, body{
 						height: 11px;
 						left: -18px;
     					top: 2px;
+
 					}
-				}
+					&:hover:before{
+    					background: url(../img/liked-icon-hover.png) no-repeat;
+						width: 12px;
+						height: 11px;
+    					}
+					}
 				&__link{
+					display: block;
 					color: #838383;
 					text-decoration: none;
 					&:hover{
@@ -263,6 +302,56 @@ html, body{
    					padding: 0px 5px;
    					color: #fff;
 		    	}
+		    }
+		    .quickcart{
+		    	display: none;
+		    	width: 220px;
+		    	height: 90px;
+		    	background: #fff;
+		    	padding: 10px 20px 10px;
+		    	position: absolute;
+    			top: 30px;
+    			z-index: 1;
+		    	&__title{
+		    		color: #666;
+		    		text-transform: uppercase;
+		    	}
+		    	&__price{
+		    		font-size: 18px;
+		    		font-family: "OpenSansBold";
+		    		color: #0077a2;
+		    	}
+		    	&__line{
+		    		width: 180px;
+		    		height: 1px;
+		    		background: #acacac;
+		    		margin: 5px auto 10px;
+		    		
+		    	}
+		    	&__price{
+		    		margin-left: 81px;
+		    	}
+		    	&__cart{
+		    		text-decoration: none;
+		    		text-transform: uppercase;
+		    		font-size: 11px;
+		    		color: #6b6b6b;
+		    		border: 1px solid #e1e1e1;
+		    		padding: 5px 12px;
+		    		float: left;
+		    	}
+		    	&__clear{
+		    		float: right;
+		    		text-decoration: none;
+		    		text-transform: uppercase;
+		    		font-size: 11px;
+		    		color: #6b6b6b;
+		    		border: 1px solid #e1e1e1;
+		    		padding: 5px 12px;
+		    	}
+		    }
+		    .db{
+		    	display: block;
 		    }
 		}
 	}
@@ -343,17 +432,28 @@ html, body{
 	margin: 30px 0 0;
 	.woman-img{
 		position: relative;
+		overflow: hidden;
+		a{
+			img{
+				transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
+			}
+		}
 		&__link{
 			position: absolute;
-			top: 135px;
+			 top: 70%;
 			display: block;
-			background: rgba(185, 175, 172, .6);
+			background: rgba(245, 245, 245, .3);
 			color: #fff;
 			text-transform: uppercase;
 			font-family: "OpenSansBold";
 			width: 100%;
 			text-decoration: none;
-			padding: 25px 0 25px 25px;
+			padding: 20px 0 20px 25px;
+			font-size: 16px;
 		}
 		&:after{
 			content:"";
@@ -362,23 +462,34 @@ html, body{
 			width: 7px;
 			height: 11px;
     		left: 90%;
-    		top: 81%;
+    		top: 83%;
 
 		}
 	}
 	.man-img{
 		position: relative;
+		overflow: hidden;
+		a{
+			img{
+				transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
+			}
+		}
 		&__link{
 			position: absolute;
 			top: 0;
-			//display: block;
-			background: rgba(185, 175, 172, .6);
+			font-size: 16px;
+			display: block;
+			background: rgba(245, 245, 245, .3);
 			color: #fff;
 			text-transform: uppercase;
 			font-family: "OpenSansBold";
 			width: 100%;
 			text-decoration: none;
-			padding: 25px 0 25px 25px;
+			padding: 20px 0 20px 25px;
 		}
 		&:after{
 			content:"";
@@ -387,12 +498,22 @@ html, body{
 			width: 7px;
 			height: 11px;
     		left: 90%;
-    		top: 12%;
+    		top: 11%;
 
 		}
 	}
 	.holder-bg{
 		position: relative;
+		overflow: hidden;
+		a{
+			img{
+				transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
+			}
+		}
 		&__link{
 			position: absolute;
 			top: 42%;
@@ -406,6 +527,16 @@ html, body{
 	.main-2-left{
 		position: relative;
 		top: -88px;
+		overflow: hidden;
+		a{
+			img{
+				transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
+			}
+		}
 		&__link{
 			position: absolute;
 			top: 55%;
@@ -418,18 +549,33 @@ html, body{
 			padding: 10px;
 			text-decoration: none;
 			font-family: "OpenSansBold";
+			&:hover{
+				 background: #0092c7; 
+			}
 		}
 	}
 	.main-2-bg-center{
 		position: relative;
 		z-index: 1;
 		max-width: 419px;
-		 top: -93px;
-    	left: -46%;;
+		top: -93px;
+    	left: -46%;
+		transition:  0.4s ease;
+		&:hover{
+			transition:  5.4s ease;
+			transform: scale(1.3);
+		}		
 	}
-	.main-2-bg-right{
+	.holder-main2-right{
+		overflow: hidden;
+		.main-2-bg-right{
 		position: relative;
 		top: 10px;
+				transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
 		&__link{
 			position: absolute;
 			top: 36%;
@@ -442,8 +588,13 @@ html, body{
 			padding: 10px;
 			text-decoration: none;
 			font-family: "OpenSansBold";
+			&:hover{
+				 background: #0092c7; 
+			}
 		}
 	}
+	}
+	
 }
 // ====MAIN-2 END====
 // ====MAIN-3====
@@ -465,8 +616,14 @@ html, body{
 	}	
 	.main-3-holder{
 		margin: 40px 0 0;
+		overflow: hidden;
 		&__img{
 			position: relative;
+			transition:  0.4s ease;
+			  &:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  }
 		}
 		.count-left{
 			position: absolute;
@@ -526,7 +683,7 @@ html, body{
 			padding: 13px;
 		}
 		&__item{
-			border: 1px solid #e8e8e8;
+			
 			padding: 40px 20px 30px;
 			width: 100%;
 			max-width: 209px;
@@ -534,6 +691,9 @@ html, body{
 			height: 305px;
 			border-right-width: 0;
 			position: relative;
+			&:hover{
+				border: 1px solid #e8e8e8;
+			}
 			.stock{
 				position: absolute;
 				top: 0;
@@ -589,6 +749,7 @@ html, body{
 		margin: 30px auto 0;
 		text-align: center;
 		text-decoration: none !important;
+		&:hover{ background: #0092c7; color: #fff;}
 	}
 }
 // ====MAIN-3 END====
@@ -752,7 +913,6 @@ html, body{
 			padding: 13px;
 		}
 		&__item{
-			border: 1px solid #e8e8e8;
 			padding: 40px 20px 30px;
 			width: 100%;
 			max-width: 210px;
@@ -760,6 +920,9 @@ html, body{
 			height: 305px;
 			border-right-width: 0;
 			position: relative;
+			&:hover{
+				border: 1px solid #e8e8e8;
+			}
 			.stock{
 				position: absolute;
 				top: 0;
@@ -775,9 +938,9 @@ html, body{
 					background: #0077a2;
 				}
 			}
-			&:last-child{
-				border-right-width: 0px;
-			}	
+			// &:last-child{
+			// 	border-right-width: 0px;
+			// }	
 		}
 		.holder-description-clocks{
 			display: flex;
@@ -831,6 +994,15 @@ html, body{
 			border: 1px solid #dedede;
 			border-width: 0 0 1px 1px;
 			width: 293px;
+			overflow: hidden;
+			img{
+				transition:  0.4s ease;
+			  	&:hover{
+				  transition:  5.4s ease;
+				  transform: scale(1.3);
+			  	}
+			}
+
 			&:first-child{
 				border-left-width: 0;
 			}
@@ -894,6 +1066,7 @@ html, body{
 			background: #0077a2;
 			color: #fff;
 			text-transform: uppercase;
+			&:hover{ background: #0092c7; }
 		}
 	}
 	.main-7-item-list{
@@ -955,3 +1128,52 @@ html, body{
 }
 
 // ====FOOTER END====
+
+//====BREADCRUMBS====
+.breadcrumbs{
+	&__item{
+		display: inline-block;
+		margin-right: 20px;
+		padding: 20px 0;
+		&:last-child{
+			margin: 0;
+		}
+	}
+	&__link{
+		color: #929292;
+		font-size: 12px;
+		font-family: "OpenSans-Italic";
+		position: relative;
+		text-decoration: none !important;
+		&:after{
+			content: "";
+			position: absolute;
+			background: url(../img/breadcrumbs-arr.png) no-repeat;
+			width: 3px;
+			height: 6px;
+			top: 5px;
+    		right: -15px;
+		}
+		// &:last-child:after{
+		// 	background: none;
+		// }
+	}
+}	
+
+//====BREADCRUMBS END====
+//====CONTENT-CARD====
+.content-top{
+	.content-top-bg{
+		background: #fff;
+
+	}
+	&__title{
+		font-size:20px;
+		color: #444;
+		text-transform: uppercase;
+		padding: 40px 0;
+		font-family: "OpenSans-ExtraBold";
+	}
+}
+
+//====CONTENT-CARD END====
