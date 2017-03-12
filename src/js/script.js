@@ -7,6 +7,8 @@ $(function(){
 		popupSearch.toggleClass("db");
 	});
 
+	
+
 
 	var cart = $(".cart"),
 		quickCart = $(".quickcart");
