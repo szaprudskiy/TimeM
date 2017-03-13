@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<!-- <link rel="stylesheet" href="css/flipclock.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -231,22 +232,30 @@
 							<div class="main-3-holder">
 								<img class="main-3-holder__img" src="img/main3-left.png" alt="">
 								<div class="count-left">
-									<div class="count-left__value">
-										12 
+									<div class="count-left__holder">	
+										<div class="count-left__value" id="days">
+											12
+										</div>
 										<p>дней</p>
-									</div>
-									<div class="count-left__value">
-										9 
-										<p>часов</p>
-									</div>
-									<div class="count-left__value">
-										27 
-										<p>минут</p>
-									</div>
-									<div class="count-left__value">
-										15 
-										<p>секунд</p>
-									</div>
+									</div>	
+									<div class="count-left__holder">	
+										<div class="count-left__value" id="hours">
+											9 
+										</div>
+										<p>дней</p>
+									</div>	
+									<div class="count-left__holder">	
+										<div class="count-left__value" id="minutes">
+											27 
+										</div>
+										<p>дней</p>
+									</div>	
+									<div class="count-left__holder">	
+										<div class="count-left__value" id="seconds">
+											15
+										</div>
+										<p>дней</p>
+									</div>	
 								</div>
 							</div>	
 						</div>
@@ -270,6 +279,11 @@
 							</a>	
 							<a href="javascript:void(0);">
 								<div class="slider__item">
+								<div class="count-clock">
+									<div class="count-clock__item" id="hour">9</div>:
+									<div class="count-clock__item" id="minut">54</div>:
+									<div class="count-clock__item" id="second">12</div>
+								</div>
 									<img src="img/slider-item1.png" alt="">
 									<p class="slider__text">Наручные часы</p>
 									<div class="holder-description-clocks">
@@ -455,6 +469,13 @@
 								<div class="main-5-slider__item">
 									<img src="img/slider-item1.png" alt="">
 									<p class="main-5-slider__text">Наручные часы</p>
+									<div class="main-5-slider__rating">
+										<span><img class="main-5-slider__img" src="img/star-rait.png" alt="" width="13px" height="12px"></span>
+										<span><img src="img/star-rait.png" alt=""></span>
+										<span><img src="img/star-rait.png" alt=""></span>
+										<span><img src="img/star-rait.png" alt=""></span>
+										<span><img src="img/star-rait.png" alt=""></span>
+									</div>
 									<p class="main-5-slider__price">2899.90 <span>3899.90</span></p> 
 									<!-- <div class="stock">
 										<div class="stock__item">
@@ -666,6 +687,7 @@
 	<!-- MAIN-6 END-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/flipclock.min.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
 </html>

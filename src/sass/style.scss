@@ -482,6 +482,9 @@ html, body{
 	.db{
 		display: block;
 	}
+	.dn{
+		display: none;
+	}
 }
 // ====HEADER EN====
 // ====MAIN-1====
@@ -687,7 +690,8 @@ html, body{
 			position: absolute;
 			z-index: 1;
 			top: 80px;
-			&__value{
+			
+			&__holder{
 				color: #777676;
 				text-align: center;
 				border: 1px solid #e8e8e8;
@@ -698,9 +702,12 @@ html, body{
 				p{
 					font-family: "OpenSansRegular";
 					font-size: 12px;
+					margin: 0;
 				}
 			}
+
 		}
+		
 	}
 	.slider{
 		margin: 80px 0 0;
@@ -740,8 +747,8 @@ html, body{
 			background-position: 10px 8px;
 			padding: 13px;
 		}
+		
 		&__item{
-			
 			padding: 40px 20px 30px;
 			width: 100%;
 			max-width: 209px;
@@ -749,6 +756,29 @@ html, body{
 			height: 305px;
 			border-right-width: 0;
 			position: relative;
+			.count-clock{
+				position: absolute;
+				top: 0;
+				left: 57%;
+    			display: flex;
+    			color: #6e6d6d;
+    			padding-top: 5px;
+    			&:before{
+    				content: "";
+    				position: absolute;
+					background: url(../img/clock-icon.png) no-repeat;
+					width: 12px;
+					height: 12px;
+					top: 8px;
+					left: -10px;
+    			}
+    			&__item{
+    				font-family: "OpenSansBold";
+    				color: #6e6d6d;
+    				font-size: 14px;
+    				padding: 0 5px;
+    			}
+			}
 			&:hover{
 				border: 1px solid #e8e8e8;
 			}
@@ -1013,6 +1043,25 @@ html, body{
 			color: #6f6f6f;
 			margin: 20px 0;
 		}
+		&__rating {
+		  direction: rtl;
+		  text-align: left;
+		  margin-top: 10px;
+		}
+		&__rating > span {
+		    display: inline-block;
+		    position: relative;
+		    width: 1.1em;
+		    padding: 0 3px; }
+
+		&__rating > span:hover:before {
+		    content: url(../img/star-rait-hover.png);
+		    position: absolute; }
+		&__rating > span:hover ~ span:before {
+		    content: url(../img/star-rait-hover.png);
+		    position: absolute; 
+			left: 10px;
+		}
 		&__price{
 			color: #186a8a;
 			font-family: "OpenSansBold";
@@ -1024,6 +1073,10 @@ html, body{
 				font-family: "OpenSansRegular";
 				text-decoration:line-through;
 			}
+		}
+		&__img{
+			width: 13px;
+			height: 12px;
 		}
 	}
 	
@@ -1223,7 +1276,7 @@ html, body{
 .content-top{
 	.content-top-bg{
 		background: #fff;
-
+		
 	}
 	&__title{
 		font-size:20px;
@@ -1232,6 +1285,133 @@ html, body{
 		padding: 40px 0;
 		font-family: "OpenSans-ExtraBold";
 	}
+	.content-card{
+		border-top: 1px solid #e1e1e1;
+
+	}
+	.content-slider{
+		&__left{
+			li{
+				border: 1px solid  #e1e1e1;
+				text-align: center;
+				border-width: 0 1px 1px;
+				&:first-child{
+					padding: 20px 0;
+				}
+			}
+		}
+	}
+
 }
 
 //====CONTENT-CARD END====
+//====TABS-CARD====
+.tabs-card{
+	&__bg{
+		background: #e9e9e9;
+		// padding: 38px 0;
+	}
+	.tabs-nav{
+		display: flex;
+		
+		li{
+		//	margin: 0 30px 0 35px;
+			a{
+				display: block;
+				color: #3a3a3a;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-family: "OpenSansBold";
+				padding: 38px 45px 38px 35px;
+				&:hover{
+					color: #fff;
+					background: #b7b7b7;
+
+				}
+
+			}
+		}
+	}
+}
+
+//====TABS-CARD END====
+//==== CONTENT-BODY ====
+
+.content-body{
+	background: #fff;
+	.content-vitrina{
+		&__title{
+			color: #444;
+			font-size: 20px;
+			font-family: "OpenSans-ExtraBold";
+			text-transform: uppercase;
+			margin: 40px 0 40px 20px;
+		}
+		&__right{
+			border: 1px solid #e1e1e1;
+		}
+		&__table{
+			
+			table{
+				width: 100%;
+				height: 374px;
+				color: #929292;
+				tr{
+
+					border: 1px solid #e8e8e8;
+					padding: 20px 0;
+					border-width: 1px 0;
+					td{
+						padding: 20px 0;
+					}
+				}
+			}
+			
+		}
+		&__text{
+			color: #3a3a3a;
+			p{
+				margin-bottom: 20px;
+			}
+		}
+		&__bot{
+			padding: 40px 0 50px;
+		}
+	}
+}
+	//==== PAYMENT ====
+		.total-card-title{
+			color: #444;
+			font-size: 20px;
+			font-family: "OpenSans-ExtraBold";
+			text-transform: uppercase;
+		}
+		.line-card{
+			width: 100%;
+			background: #f3f3f3;
+			height: 3px;
+			position: relative;
+			&__blue{
+				position: absolute;
+				top: 0;
+				width: 70px;
+				height:3px;
+				background: #0077a2;
+			}
+		}
+		.payment-card{
+			&__left{
+				p{
+					color: #3a3a3a;
+					margin-bottom: 25px;
+				}
+			}
+			&__left-f{
+				padding: 30px 0 20px;
+				color: #6f6f6f;
+				font-size: 16px;
+				font-family: "OpenSansBold" ;
+			}
+		}
+	//==== PAYMENT END====
+//==== CONTENT-BODY END====
