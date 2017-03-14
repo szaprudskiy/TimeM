@@ -66,6 +66,15 @@ $(function(){
 		arrows: true	
 	})
 
+	$(".slider-card-bot").slick({
+		slidesToShow: 5,
+		slidesToScroll: 4,
+		infinite: true,
+		arrows: true	
+	})
+
+	
+
 	 $('.content-slider__left').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,

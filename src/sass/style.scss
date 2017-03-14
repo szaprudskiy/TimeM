@@ -1378,7 +1378,6 @@ html, body{
 			padding: 40px 0 50px;
 		}
 	}
-}
 	//==== PAYMENT ====
 		.total-card-title{
 			color: #444;
@@ -1414,4 +1413,270 @@ html, body{
 			}
 		}
 	//==== PAYMENT END====
+	//==== PRESENCE ====
+		.presence{
+			
+			.presence-left{
+				margin-top: 30px;
+				&__select{
+					width: 100%;
+					outline: none;
+					padding: 5px 5px;
+				}
+			}
+			.open-map{
+				height: 260px;
+				overflow-y: scroll;
+				margin-top: 20px;
+				&__holder{
+					border-bottom: 1px solid #e1e1e1;
+					padding: 20px 0;
+					p{
+						color: #3a3a3a;
+					}
+					a{
+						color: #0077a2;
+						text-decoration: underline !important;
+					}
+				}
+			}
+			.presence-left-bot{
+				border-bottom: 1px solid #e1e1e1;
+				padding-bottom: 25px;
+				
+				&__title{
+					color: #3a3a3a;
+				}
+				&__span{
+					color: #0077a2;
+					font-family: "OpenSansBold";
+					font-size: 22px;
+					margin-left: 10px;
+				}
+				&__span-2{
+					color: #9d9d9d;
+					font-size: 13px;
+				}
+				&__link{
+					display: block;
+					margin-top: 15px;
+					color: #fff;
+					text-transform: uppercase;
+					background: #0077a2;
+					padding: 15px 0;
+					width: 226px;
+					text-align: center;
+					&:hover{ 
+						background: #0092c7; 
+					}
+				}
+			}
+			.presence-right{
+				margin-top: 30px;
+				&__map{
+					width: 100%;
+
+				}
+			}
+		}
+	//==== PRESENCE END====
+	//==== REVIEWS ====
+		.reviews{
+			padding: 50px 0;
+			
+			&__left{
+				margin-top: 30px;
+			}
+			&__date{
+				color: #9b9b9b;
+
+			}
+			&__name{
+				color: #313131;
+				font-size: 14px;
+				font-family: "OpenSansBold";
+				text-transform: uppercase;
+			}
+			&__title{
+				position: relative;
+				color: #313131;
+				    margin-left: 20px;
+				&:before{
+					content: "";
+					position: absolute;
+					background: url(../img/quote.png) no-repeat;
+					width: 13px;
+					height: 10px;
+					left: -20px;
+					top: 3px;
+				}
+			}
+			&__btns{
+				margin: 30px 0 0;
+				display: flex;
+				li{
+					margin-right: 15px;
+					a{
+						color: #6b6b6b;
+						text-transform: uppercase;
+						border: 1px solid #e1e1e1;
+						padding: 15px;
+						display: block;
+						&:hover{
+							background: #0077a2;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	//==== REVIEWS END ====
+	//==== CREDIT ====
+		.credit{
+			margin-bottom: 30px;
+			
+			p{
+				margin: 30px 0 24px;
+				color: #3a3a3a;
+			}
+			&__title{
+				color: #0077a2 !important;
+				font-family: "OpenSansBold";
+			}
+			&__link{
+				display: block;
+				background: #0077a2;
+				color: #fff;
+				padding: 15px 0;
+				width: 120px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+		}
+
+	//==== CREDIT END ====
+}
 //==== CONTENT-BODY END====
+//==== SLIDER-CARD-BOT ====
+.slider-card-bot-bg{
+	background: #fff;
+	.slider-card-bot{
+		display: flex;
+		// .slick-slide img{
+		// 	margin: 0 auto;
+		// }
+		.slick-slide {
+			min-height: 0;
+		}
+		.slick-prev{
+			background: #999 url(../img/prev-arr.png) no-repeat;;
+			top: -23%;
+			border-radius: 50%;
+			background-position: 9px 8px;
+			padding: 13px;
+			left: 93%;
+		}
+		.slick-next:before, .slick-prev:before{
+			content: "";
+		}
+		.slick-next{
+			right: -12px;
+			background: #999 url(../img/next-arr.png) no-repeat;
+			top: -23%;
+			background-position: 10px 8px;
+			border-radius: 50%;
+			padding: 13px;
+		}
+		.slick-prev:hover {
+			background: #0077a2 url(../img/prev-arr.png) no-repeat;
+			padding: 13px;
+			background-position: 9px 8px;
+		}
+		.slick-next:hover{
+			background: #0077a2 url(../img/next-arr.png) no-repeat;
+			background-position: 10px 8px;
+			padding: 13px;
+		}
+		
+		&__item{
+			padding: 40px 20px 30px;
+			width: 100%;
+			max-width: 209px;
+			margin: 0 auto;
+			height: 305px;
+			border-right-width: 0;
+			position: relative;
+			.count-clock{
+				position: absolute;
+				top: 0;
+				left: 57%;
+    			display: flex;
+    			color: #6e6d6d;
+    			padding-top: 5px;
+    			&:before{
+    				content: "";
+    				position: absolute;
+					background: url(../img/clock-icon.png) no-repeat;
+					width: 12px;
+					height: 12px;
+					top: 8px;
+					left: -10px;
+    			}
+    			&__item{
+    				font-family: "OpenSansBold";
+    				color: #6e6d6d;
+    				font-size: 14px;
+    				padding: 0 5px;
+    			}
+			}
+			&:hover{
+				border: 1px solid #e8e8e8;
+			}
+			.stock{
+				position: absolute;
+				top: 0;
+    			left: 0;
+				&__item{
+					color: #fff;
+					background: #186a8a;
+					padding: 12px 3px;
+					margin-bottom: 5px;
+					font-family: "open-sans-semibold";
+				}
+				&__item--color{
+					background: #0077a2;
+				}
+			}
+			&:last-child{
+				border-right-width: 1px;
+			}	
+		}
+		.holder-description-clocks{
+			display: flex;
+     		justify-content: space-around;
+   			align-items: center;
+   			margin-right: 20px;
+    				
+		}
+		&__text{
+			text-align: center;
+			font-family: "OpenSansBold";
+			color: #6f6f6f;
+			margin: 20px 0;
+		}
+		&__price{
+			color: #186a8a;
+			font-family: "OpenSansBold";
+			text-align: center;
+			font-size: 17px;
+			span{
+				font-size: 14px;
+				color: #a3a3a3;
+				font-family: "OpenSansRegular";
+				text-decoration:line-through;
+			}
+		}
+	}
+}	
+//==== SLIDER-CARD-BOT END====
