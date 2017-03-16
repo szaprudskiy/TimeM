@@ -366,6 +366,7 @@ html, body{
     		&__item{
 				position: relative;
 				padding: 26px 0;
+				border-top: 1px solid transparent;
 				&:after{
 					content: "";
 					position: absolute;
@@ -380,7 +381,7 @@ html, body{
 					cursor: pointer;
 				}
 				&:hover{
-    				border-top: 1px solid #0077a2;
+    				border-color: #0077a2;
     				color: #000;
     			}
     		}
@@ -404,11 +405,11 @@ html, body{
 						li{
 							color: #8d8d8d;
 							padding: 5px 0;
+							border: 1px solid transparent;
+							border-width: 1px 0;
 							&:hover{
-								border: 1px solid #0077a2;
-								border-width: 1px 0;
+								border-color: #0077a2;	
 								color: #0077a2;
-
 							}
 							a{
 								display: block;
@@ -569,16 +570,54 @@ html, body{
 		a{
 			img{
 				transition:  0.4s ease;
-			  &:hover{
+				position: relative;
+				&:hover{
 				  transition:  5.4s ease;
 				  transform: scale(1.3);
 			  }
+
 			}
+
 		}
+		&__title{
+				font-size: 46px;
+			    position: absolute;
+			    color: #fff;
+			    font-family: "OpenSansBold";
+			    top: 125px;
+			    left: 84px;
+			    margin: 0;
+			}
 		&__link{
 			position: absolute;
 			top: 42%;
     		left: 95%;
+		}
+		&__list{
+			position: absolute;
+			top: 200px;
+			left: 115px;
+			li{
+				position: relative;
+				color: #fff;
+				font-size: 14px;
+				font-family: "open-sans-semibold";
+				&:before{
+					content: "";
+					position: absolute;
+					background: url(../img/check.png) no-repeat;
+					width: 13px;
+					height: 10px;
+					left: -24px;
+					top: 5px;
+				}
+			}
+		}
+		&__rolex-img{
+			position: absolute;
+			top: 200px;
+			left: 325px;
+			z-index: 1;
 		}
 	}
 }
@@ -589,6 +628,40 @@ html, body{
 		position: relative;
 		top: -88px;
 		overflow: hidden;
+		&__title{
+			font-size: 22px;
+			color: #101010;
+			font-family: "OpenSansBold";
+			position: absolute;
+			top: 55px;
+			left: 45px;
+		}
+		&__text{
+			position: absolute;
+			color: #919191;
+			top: 117px;
+			left: 75px;
+		}
+		&__price{
+			position: absolute;
+			top: 145px;
+			left: 42px;
+			color: #0077a2;
+			font-size: 52px;
+			font-family: "OpenSansBold";
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			width: 500px;
+			height: 100px;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			width: 500px;
+			height: 100px;
+		}
 		a{
 			img{
 				transition:  0.4s ease;
@@ -598,22 +671,22 @@ html, body{
 			  }
 			}
 		}
-		// &__link{
-		// 	position: absolute;
-		// 	top: 55%;
-  //   		left: 9%;
-		// 	display: block;
-		// 	color: #fff;
-		// 	background: #0077a2;
-		// 	text-transform: uppercase;
-		// 	font-size: 17px;
-		// 	padding: 10px;
-		// 	text-decoration: none;
-		// 	font-family: "OpenSansBold";
-		// 	&:hover{
-		// 		 background: #0092c7; 
-		// 	}
-		// }
+		&__link{
+			position: absolute;
+			top: 220px;
+    		left: 42px;
+			display: block;
+			color: #fff;
+			background: #0077a2;
+			text-transform: uppercase;
+			font-size: 17px;
+			padding: 10px;
+			text-decoration: none;
+			font-family: "OpenSansBold";
+			&:hover{
+				 background: #0092c7; 
+			}
+		}
 	}
 	.main-2-bg-center{
 		position: relative;
@@ -622,10 +695,32 @@ html, body{
 		top: -93px;
     	left: -46%;
 		transition:  0.4s ease;
+		border: 10px solid #fff;
+		border-radius: 50%;
 		&:hover{
 			transition:  5.4s ease;
 			transform: scale(1.3);
-		}		
+		}
+		&__title{
+			position: absolute;
+			top: 30px;
+			left: 0;
+			color: #000;
+			text-transform: uppercase;
+			z-index: 10;
+			width: 300px;
+    		text-align: center;
+    		font-family: "OpenSansBold";
+		}
+		&__text{
+			color: #434343;
+			position: absolute;
+			top: 85px;
+			left:0;
+			z-index: 1;
+			text-align: center;
+			width: 300px;
+		}
 	}
 	.holder-main2-right{
 		overflow: hidden;
@@ -637,23 +732,37 @@ html, body{
 				  transition:  5.4s ease;
 				  transform: scale(1.3);
 			  }
-		// &__link{
-		// 	position: absolute;
-		// 	top: 36%;
-  //   		left: 39%;
-		// 	display: block;
-		// 	color: #fff;
-		// 	background: #0077a2;
-		// 	text-transform: uppercase;
-		// 	font-size: 17px;
-		// 	padding: 10px;
-		// 	text-decoration: none;
-		// 	font-family: "OpenSansBold";
-		// 	&:hover{
-		// 		 background: #0092c7; 
-		// 	}
-		// }
-	}
+			&__link{
+				position: absolute;
+				top: 97px;
+	    		left: 193px;
+				display: block;
+				color: #fff;
+				background: #0077a2;
+				text-transform: uppercase;
+				font-size: 17px;
+				padding: 10px;
+				text-decoration: none;
+				font-family: "OpenSansBold";
+				&:hover{
+					 background: #0092c7; 
+				}
+			}
+		}
+		&__title{
+			position: absolute;
+			top: 39px;
+			left:193px;
+			font-size: 22px;
+			color: #101010;
+			font-family: "OpenSansBold";
+		}
+		&__text{
+			color: #919191;
+			position: absolute;
+			top: 74px;
+			left: 193px;
+		}
 	}
 	
 }
@@ -685,6 +794,29 @@ html, body{
 				  transition:  5.4s ease;
 				  transform: scale(1.3);
 			  }
+		}
+		&__text{
+			position: absolute;
+			color: #777676;
+			font-size: 18px;
+			font-family: "OpenSansBold";
+			top: 165px;
+			left: 110px;
+		}
+		&__text--size{
+			position: absolute;
+			font-size: 16px;
+			text-transform: uppercase;
+			top: 193px;
+			left: 110px;
+		}
+		&__price{
+			position: absolute;
+			color: #b22029;
+			font-size: 28px;
+			font-family: "OpenSansBold";
+			top: 222px;
+			left: 110px;
 		}
 		.count-left{
 			position: absolute;
@@ -747,6 +879,55 @@ html, body{
 			background-position: 10px 8px;
 			padding: 13px;
 		}
+		&__item-hover{
+			// display: none;
+			padding: 40px 20px 30px;
+			width: 100%;
+			max-width: 209px;
+			margin: 0 auto;
+			height: 305px;
+			border-right-width: 0;
+			position: relative;
+			border: 1px solid transparent;
+			.count-clock{
+				position: absolute;
+				top: 0;
+				left: 57%;
+    			display: flex;
+    			color: #6e6d6d;
+    			padding-top: 5px;
+    			&:before{
+    				content: "";
+    				position: absolute;
+					background: url(../img/clock-icon.png) no-repeat;
+					width: 12px;
+					height: 12px;
+					top: 8px;
+					left: -10px;
+    			}
+    			&__item{
+    				font-family: "OpenSansBold";
+    				color: #6e6d6d;
+    				font-size: 14px;
+    				padding: 0 5px;
+    			}
+			}
+				.stock{
+				position: absolute;
+				top: 0;
+    			left: 0;
+				&__item{
+					color: #fff;
+					background: #186a8a;
+					padding: 12px 3px;
+					margin-bottom: 5px;
+					font-family: "open-sans-semibold";
+				}
+				&__item--color{
+					background: #0077a2;
+				}
+			}
+		}
 		
 		&__item{
 			padding: 40px 20px 30px;
@@ -780,8 +961,9 @@ html, body{
     				padding: 0 5px;
     			}
 			}
-			&:hover{
-				border-color: #e8e8e8;
+			&:hover .slider__item-hover{
+				// border-color: #e8e8e8;
+				// display: block;
 			}
 			.stock{
 				position: absolute;
@@ -960,6 +1142,10 @@ html, body{
 				color: #0077a2;
 			}
 		}
+		&__link--border{
+			border: 1px solid #e1e1e1;
+			padding: 10px 20px;
+		}
 	}
 	.main-5-slider{
 		margin: 80px 0 0;
@@ -1112,10 +1298,13 @@ html, body{
 		display: flex;
 		justify-content: space-between;
 		&__item{
-			border: 1px solid #dedede;
-			border-width: 0 0 1px 1px;
+			border: 1px solid transparent;
+			// border-width: 0 0 1px 1px;
 			width: 293px;
 			overflow: hidden;
+			&:hover{
+				border-color:#dedede;
+			}
 			img{
 				transition:  0.4s ease;
 			  	&:hover{
@@ -1148,7 +1337,8 @@ html, body{
 // ====MAIN-7====
 .main-7{
 	background: #ededed;
-	padding: 30px 0 55px;
+	padding: 80px 0 55px;
+	margin: -30px 0 0;
 	.main-7-item{
 		&__title{
 			color: #252525;
@@ -1864,6 +2054,27 @@ html, body{
 //==== BASKET ====
 .basket{
 	background: #fff;
+	&__btn-back{
+		position: relative;
+		text-transform: uppercase;
+		color: #589cd9;
+		font-size: 12px;
+		padding: 30px 0;
+		display: block;
+		margin-left: 15px;
+		&:hover{
+			color: #589cd9;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			background: url(../img/arr-back.png) no-repeat;
+			width: 7px;
+			height: 11px;
+			left: -15px;
+    		top: 33px;
+		}
+	}
 	&__title{
 		font-size: 20px;
 		color: #444;
@@ -1875,7 +2086,7 @@ html, body{
 
 	}
 	&__item{
-		padding: 35px 0 0 20px;
+		padding: 35px 0 35px 20px;
 		border-bottom: 1px solid #e1e1e1;
 		display: flex;
 	}
@@ -1936,6 +2147,7 @@ html, body{
 }
 .decor{
 	background: #ebebeb;
+	    padding-bottom: 141px;
 }
 //==== BASKET END ====
 //==== DECOR ====
@@ -1960,11 +2172,12 @@ html, body{
 		}
 	}
 	.holder-input-top{
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 	&__dostavka{
 		
 	}
+	
 	&__radio{
 		vertical-align: top;
 		width: 15px;
@@ -1981,11 +2194,14 @@ html, body{
 	&__radio:not(checked) + label {
 	  position: relative;
 	  padding: 0 0 0 20px;
+	  font-size: 14px;
+	  color: #555;
+	  font-family: "OpenSansRegular";
 	}
 	&__radio:not(checked) + label:before {
 	  content: '';
 	  position: absolute;
-	  // top: -3px;
+	  top: 2px;
 	  left: 0;
 	  width: 15px;
 	  height: 15px;
@@ -1996,7 +2212,7 @@ html, body{
 	&__radio:not(checked) + label:after {
 		  content: '';
 		  position: absolute;
-		  top: 4px;
+		  top: 6px;
 		  left: 4px;
 		  width: 7px;
 		  height: 7px;
@@ -2009,5 +2225,39 @@ html, body{
 	&__radio:checked + label:after {
 	  opacity: 1;
 	}
+	.holder-input-top{
+		&__select{
+			width: 100%;
+			height: 38px;
+			outline: none;
+			}
+	}
+	.decor-payment{
+		&__amount{
+			color: #186a8a;
+			font-size: 32px;
+			font-family: "OpenSansBold";
+			span{
+				color: #a4a4a4;
+				font-size: 14px;
+			}
+			p{
+				font-size: 14px;
+				color: #555;
+				font-family: "OpenSansRegular";
+			}
+		}
+		&__btn-order{
+			color: #fff;
+			text-transform: uppercase;
+			background: #0077a2;
+			font-size: 14px;
+			text-align: center;
+			font-family: "OpenSansBold";
+			padding: 25px 0;
+		}
+
+	}
+	
 }
 //==== DECOR END====

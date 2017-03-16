@@ -160,6 +160,7 @@
 							<span class="basket-value__valuta">грн</span>
 						</div>
 					</div>
+					<a class="basket__btn-back" href="javascript:void(0);">Продолжить покупки</a>
 				</div>
 				<div class="col-md-4 decor">
 					<h4 class="decor__title">Оформление заказа</h4>
@@ -170,9 +171,30 @@
 					<div class="decor__dostavka">
 						<p>Способ доставки</p>
 						<input class="decor__radio" type="radio" id="qwe" name="cc">
-						<label for="qwe">Самовывоз</label>
-						<input class="decor__radio" type="radio" id="qwe1" name="rr">
-						<label for="qwe1">Новая почта</label>
+						<label class="decor__label" for="qwe">Самовывоз</label>
+						<input class="decor__radio" type="radio" id="qwe1" name="cc">
+						<label class="decor__label" for="qwe1">Новая почта</label>
+					</div>
+					<div class="holder-input-top">
+						<p><input class="decor__input" type="text" placeholder="Город"></p>
+						<p><select class="holder-input-top__select" name="" id="">
+							<option value="">Відділення №10: вул. Онуфрія Трутенко, 6</option>
+						</select></p>
+					</div>
+					<div class="decor-payment">
+						<p>Способ оплаты</p>
+						<p><input class="decor__radio" type="radio" id="q" name="ww">
+						<label class="decor__label" for="q">Через VISA/MasterCard</label></p>
+						<p><input class="decor__radio" type="radio" id="w" name="ww">
+						<label class="decor__label" for="w">Оплата при получении</label></p>
+						<p>*Поля, обязательные для заполнения</p>
+						<div class="decor-payment__amount col-md-6">
+							<p>Общая сумма</p>
+							25 899<span>грн</span>
+						</div>
+						<div class="decor-payment__btn-order col-md-6">
+							<a class="decor-payment__btn-order" href="javascript:void(0);">Оформить заказ</a>
+						</div>
 					</div>	
 				</div>
 			</div>

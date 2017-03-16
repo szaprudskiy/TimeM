@@ -15,7 +15,11 @@ $(function(){
 
 	
 
-
+	// $(".slider__item").hover(function(){
+	// 	$(".slider__hover-slider").css({"display": "block"});
+	// }), function(){
+	// 	$(".slider__hover-slider").css({"display": "none"});
+	// };
 
 
 
