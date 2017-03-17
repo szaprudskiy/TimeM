@@ -4,16 +4,14 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+
+
+ img{
+ 	max-width: 100%;
+ 	height: auto;
+ }
 a{
 	text-decoration: none !important;
-}
-
-img{
-	max-width: 100%;
-	height: auto;
-}
-a{
-	// text-decoration: none; 
 	-webkit-transition: .35s;
 	-moz-transition: .35s;
 	-ms-transition: .35s;
@@ -183,8 +181,8 @@ html, body{
 		.phone-contacts{
 			color: #838383;
 			font-size: 18px;
-			top: 6px;
-			margin-left: 20px;
+			top: 2px;
+    		margin-left: 27px;
 			position: relative;
 			&:before{
 				content: "";
@@ -215,6 +213,8 @@ html, body{
 			text-align: center;
 			text-decoration: none;
 			font-family: "OpenSansBold";
+			width: 200px;
+			margin: -5px 0 0 12px;
 			&:hover{
 				background: #0092c7;
 			}
@@ -386,10 +386,29 @@ html, body{
     			}
     		}
     		.mega-menu{
-    			 position: absolute;
+    			position: absolute;
     			left: -9999px;
     			z-index: 10;
-
+				.country-link{
+					color: #525252;
+					font-family: "pt_sans_regular";
+					font-size: 14px;
+					display: block;
+					position: relative;
+					margin-top: 15px;
+					&:before{
+						content: "";
+						position: absolute;
+						background: url(../img/menu-arr.png) no-repeat;
+						width: 5px;
+						height: 8px;
+						top: 6px;
+    					left: -14px;
+					}
+					&:hover{
+						color: #0077a2;
+					}
+				}
     			&__holder{
     				border-top: 1px solid #0077a2;
     				margin-top: 44px;
@@ -495,9 +514,11 @@ html, body{
 	.woman-img{
 		position: relative;
 		overflow: hidden;
+		top: -16px;
 		a{
 			img{
 				transition:  0.4s ease;
+				height: 220px;
 			  &:hover{
 				  transition:  5.4s ease;
 				  transform: scale(1.3);
@@ -506,7 +527,7 @@ html, body{
 		}
 		&__link{
 			position: absolute;
-			 top: 70%;
+			 top: 72%;
 			display: block;
 			background: rgba(245, 245, 245, .3);
 			color: #fff;
@@ -531,6 +552,7 @@ html, body{
 	.man-img{
 		position: relative;
 		overflow: hidden;
+		top: -16px;
 		a{
 			img{
 				transition:  0.4s ease;
@@ -567,10 +589,12 @@ html, body{
 	.holder-bg{
 		position: relative;
 		overflow: hidden;
+		 top: -16px;
 		a{
 			img{
 				transition:  0.4s ease;
 				position: relative;
+				height: 100%;
 				&:hover{
 				  transition:  5.4s ease;
 				  transform: scale(1.3);
@@ -626,7 +650,7 @@ html, body{
 .main-2{
 	.main-2-left{
 		position: relative;
-		top: -88px;
+		top: -114px;
 		overflow: hidden;
 		&__title{
 			font-size: 22px;
@@ -654,7 +678,9 @@ html, body{
 			content: "";
 			position: absolute;
 			width: 500px;
-			height: 100px;
+			height: 50px;
+   			transform: rotate(5deg);
+    		top: 35px;
 		}
 		&:after{
 			content: "";
@@ -692,7 +718,7 @@ html, body{
 		position: relative;
 		z-index: 1;
 		max-width: 419px;
-		top: -93px;
+		top: -125px;
     	left: -46%;
 		transition:  0.4s ease;
 		border: 10px solid #fff;
@@ -703,7 +729,7 @@ html, body{
 		}
 		&__title{
 			position: absolute;
-			top: 30px;
+			top: 0;
 			left: 0;
 			color: #000;
 			text-transform: uppercase;
@@ -715,7 +741,7 @@ html, body{
 		&__text{
 			color: #434343;
 			position: absolute;
-			top: 85px;
+			top: 55px;
 			left:0;
 			z-index: 1;
 			text-align: center;
@@ -724,6 +750,8 @@ html, body{
 	}
 	.holder-main2-right{
 		overflow: hidden;
+		position: relative;
+    	top: -35px;
 		.main-2-bg-right{
 		position: relative;
 		top: 10px;
@@ -769,6 +797,7 @@ html, body{
 // ====MAIN-2 END====
 // ====MAIN-3====
 .main-3{
+	margin-top: -92px;
 	&__inner{
 		background: #fff;
 		padding: 40px 20px 30px;
@@ -856,7 +885,7 @@ html, body{
 			border-radius: 50%;
 			background-position: 9px 8px;
 			padding: 13px;
-			left: 93%;
+			left: 92.5%;
 		}
 		.slick-next:before, .slick-prev:before{
 			content: "";
@@ -880,7 +909,7 @@ html, body{
 			padding: 13px;
 		}
 		&__item-hover{
-			// display: none;
+			display: none;
 			padding: 40px 20px 30px;
 			width: 100%;
 			max-width: 209px;
@@ -917,6 +946,7 @@ html, body{
 				top: 0;
     			left: 0;
 				&__item{
+
 					color: #fff;
 					background: #186a8a;
 					padding: 12px 3px;
@@ -962,8 +992,7 @@ html, body{
     			}
 			}
 			&:hover .slider__item-hover{
-				// border-color: #e8e8e8;
-				// display: block;
+				display: block;	
 			}
 			.stock{
 				position: absolute;
@@ -1011,13 +1040,13 @@ html, body{
 		}
 	}
 	&__btn-bot{
-		padding: 15px 0;
+		padding: 13px 0;
 		width: 170px;
 		background: #0077a2;
 		text-transform: uppercase;
 		color: #fff;
 		display: block;
-		margin: 30px auto 0;
+		margin: 39px auto 0;
 		text-align: center;
 		text-decoration: none !important;
 		&:hover{ background: #0092c7; color: #fff;}
@@ -1094,6 +1123,7 @@ html, body{
 		background: #fff;
 	}
 	.main-5-left-category{
+		width: 200px;
 		&__top{
 			background: #252525;
 			padding: 30px 0; 
@@ -1107,7 +1137,7 @@ html, body{
 		}
 		&__body{
 			background: #0077a2;
-			padding: 35px 0;
+			padding: 18px 0;
 			p{
 				text-align: center;	
 				a{
@@ -1127,7 +1157,8 @@ html, body{
 		}
 	}
 	.main-5-nav-cat{
-		margin-top: 35px;
+		margin-top: 44px;
+    	margin-left: 24px;
 		&__item{
 			display: inline-block;
 			margin-right: 35px;
@@ -1148,7 +1179,7 @@ html, body{
 		}
 	}
 	.main-5-slider{
-		margin: 80px 0 0;
+		margin: 50px 0 0 45px;
 		display: flex;
 		// .slick-slide img{
 		// 	margin: 0 auto;
@@ -1161,14 +1192,13 @@ html, body{
 				outline: none;
 			}
 		}
-		
 		.slick-prev{
 			background: #999 url(../img/prev-arr.png) no-repeat;;
-			top: -30%;
+			top: -17%;
 			border-radius: 50%;
 			background-position: 9px 8px;
 			padding: 13px;
-			left: 92%;
+			left: 92.5%;
 		}
 		.slick-next:before, .slick-prev:before{
 			content: "";
@@ -1176,7 +1206,7 @@ html, body{
 		.slick-next{
 			right: 10px;
 			background: #999 url(../img/next-arr.png) no-repeat;
-			top: -30%;
+			top: -17%;
 			background-position: 10px 8px;
 			border-radius: 50%;
 			padding: 13px;
@@ -1192,16 +1222,17 @@ html, body{
 			padding: 13px;
 		}
 		&__item{
-			 padding-bottom: 30px;
+			margin-left: 10px;
+			padding: 30px 0;
 			width: 100%;
 			max-width: 210px;
 			//margin-right: -1px;
-			 height: 320px;
+			 height: 349px;
 			border-right-width: 0;
 			position: relative;
 			border: 1px solid transparent;
 			img{
-				margin: 40px auto 0;
+				margin: 0 auto 0;
 			}
 			&:hover{
 				border-color: #e8e8e8;
@@ -1231,6 +1262,7 @@ html, body{
    			align-items: center;
    			margin-right: 20px;
    			 height: 0;
+   			 margin-top: 20px;
     				
 		}
 		&__text{
@@ -1241,28 +1273,34 @@ html, body{
 		}
 		&__rating {
 		  direction: rtl;
-		  text-align: left;
+		  text-align: center;
 		  margin-top: 10px;
 		}
 		&__rating > span {
 		    display: inline-block;
 		    position: relative;
 		    width: 1.1em;
-		    padding: 0 3px; }
+		    // padding: 0 3px; 
+		}
 
 		&__rating > span:hover:before {
 		    content: url(../img/star-rait-hover.png);
-		    position: absolute; }
+		    position: absolute; 
+			left: 0px;
+    		top: -2px;
+		}
 		&__rating > span:hover ~ span:before {
 		    content: url(../img/star-rait-hover.png);
 		    position: absolute; 
-			left: 10px;
+			left: 0px;
+    		top: -2px;
 		}
 		&__price{
 			color: #186a8a;
 			font-family: "OpenSansBold";
 			text-align: center;
 			font-size: 17px;
+			margin-top: 10px;
 			span{
 				font-size: 14px;
 				color: #a3a3a3;
@@ -1282,6 +1320,8 @@ html, body{
 // ====MAIN-6====
 .main-6{
 	margin-top: 30px;
+	position: absolute;
+	left: 30px;
 	&__inner{
 		background: #fff;
 		padding-bottom: 35px;
@@ -1295,6 +1335,7 @@ html, body{
 		padding: 35px 0 40px;
 	}
 	.main-6-holder-articles{
+		margin: -15px 0 0;
 		display: flex;
 		justify-content: space-between;
 		&__item{
@@ -1338,7 +1379,7 @@ html, body{
 .main-7{
 	background: #ededed;
 	padding: 80px 0 55px;
-	margin: -30px 0 0;
+	margin: 42% 0 0;
 	.main-7-item{
 		&__title{
 			color: #252525;
