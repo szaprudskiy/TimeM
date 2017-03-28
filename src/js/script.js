@@ -21,12 +21,7 @@ $(function(){
 	// 	$(".slider__hover-slider").css({"display": "none"});
 	// };
 
-
-
-
 	
-
-
 
 	var cart = $(".cart"),
 		quickCart = $(".quickcart");
@@ -36,6 +31,31 @@ $(function(){
 		quickCart.toggleClass("db");
 	});
 
+
+
+	$(".country").on("click", function(){
+		$(".country-list-db").toggleClass("db");
+	})
+
+	$(".style").on("click", function(){
+		$(".mechanism-list").toggleClass("db");
+	})
+
+	$(".country").on("click", function(){
+		$(".country-list-db").toggleClass("db");
+	})
+
+	$(".country").on("click", function(){
+		$(".country-list-db").toggleClass("db");
+	})
+
+	$(".country").on("click", function(){
+		$(".country-list-db").toggleClass("db");
+	})
+
+	$(".country").on("click", function(){
+		$(".country-list-db").toggleClass("db");
+	})
 
 
 	$(".slider").slick({
@@ -69,6 +89,14 @@ $(function(){
 		infinite: true,
 		arrows: true	
 	})
+
+	$(".main-5-slider-list").slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		infinite: true,
+		arrows: true
+	})
+
 
 	$(".slider-card-bot").slick({
 		slidesToShow: 5,

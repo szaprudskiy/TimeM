@@ -13,7 +13,6 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		
 			<div class="header-top">
 				<div class="container">
 					<div class="row">
@@ -138,8 +137,11 @@
 							<p class="basket__code-item">Код товара: 3585958</p>
 						</div>
 						<div class="col-md-4 basket-value">
-
-							<input class="basket-value__int" type="text" value="0">
+							<span class="basket-value__int-holder">
+							<a class="basket-value__int-inc" href="javascript:void(0);"></a>
+								<input class="basket-value__int" type="text" value="0">
+							<a class="basket-value__int-dec" href="javascript:void(0);"></a>
+							</span>
 							<a class="basket-value__close" href="javascript:void(0);"><img src="img/close.png" alt=""></a>
 
 							<span class="basket-value__price">13000</span>
@@ -154,7 +156,11 @@
 							<p class="basket__code-item">Код товара: 3585958</p>
 						</div>
 						<div class="col-md-4 basket-value">
-							<input class="basket-value__int" type="text" value="0">
+							<span class="basket-value__int-holder">
+							<a class="basket-value__int-inc" href="javascript:void(0);"></a>
+								<input class="basket-value__int" type="text" value="0">
+							<a class="basket-value__int-dec" href="javascript:void(0);"></a>
+							</span>
 							<a class="basket-value__close" href="javascript:void(0);"><img src="img/close.png" alt=""></a>
 							<span class="basket-value__price">13000</span>
 							<span class="basket-value__valuta">грн</span>
@@ -272,7 +278,7 @@
 	</div>
 	<!-- SLIDER-CARD-TOP END-->
 	<!-- SLIDER-CARD-BOT -->
-	<div class="container slider-card-bot-bg">
+	<div class="container slider-card-bot-bg slider-card-bot-bg--abs">
 		<!-- <div class=""> -->
 			<div class="row">
 				<div class="col-md-12">
@@ -342,10 +348,10 @@
 			</div>
 		<!-- </div>	 -->
 	</div>
-
+	
 	<!-- SLIDER-CARD-BOT END-->
 	<!-- MAIN-7 -->
-	<section class="main-7">
+	<section class="main-7 main-7--mar">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 main-7-item">
