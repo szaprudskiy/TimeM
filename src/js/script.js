@@ -114,23 +114,23 @@ $(function(){
 
 	
 
-	 $('.content-slider__left').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: true,
-	  fade: true,
-	  asNavFor: '.content-slider__center'
-	});
+	//  $('.content-slider__left').slick({
+	//   slidesToShow: 1,
+	//   slidesToScroll: 1,
+	//   arrows: true,
+	//   fade: true,
+	//   asNavFor: '.content-slider__center'
+	// });
 
-	$('.content-slider__center').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  asNavFor: '.content-slider__left',
-	  // dots: true,
+	// $('.content-slider__center').slick({
+	//   slidesToShow: 1,
+	//   slidesToScroll: 1,
+	//   asNavFor: '.content-slider__left',
+	//   // dots: true,
 
-	  centerMode: true,
-	  focusOnSelect: true
-	});
+	//   centerMode: true,
+	//   focusOnSelect: true
+	// });
 
 
 	 function countdown(){

@@ -657,7 +657,7 @@ html, body{
 		    overflow: hidden;
 		    width: 419px;
 		    height: 419px;
-		    margin: auto;
+		    // margin: auto;
 		    position: relative;
 		    z-index: 11;
 		}
@@ -1401,6 +1401,7 @@ html, body{
 .main-7--mar{
 	margin: 31% 0 0 !important;
 }
+
 .main-7{
 	background: #ededed;
 	padding: 80px 0 55px;
@@ -1479,6 +1480,9 @@ html, body{
 		}
 		&__twit{
 			background-position: -43px 0;
+			&:hover{
+
+			}
 		}
 		&__tube{
 			background-position: -86px 0;
@@ -1491,6 +1495,7 @@ html, body{
 		}
 	}
 	
+
 }
 
 // ====MAIN-7 END====
@@ -1561,8 +1566,253 @@ html, body{
 				border: 1px solid  #e1e1e1;
 				text-align: center;
 				border-width: 0 1px 1px;
+				width: 80px;
+				cursor: pointer;
+				img{
+					max-width: none;
+				}
 				&:first-child{
-					padding: 20px 0;
+					padding: 20px;
+				}
+			}
+		}
+		.content-slider-center{
+			position: relative;
+			&__img{
+				padding: 20px 0 0;
+			}
+			&__prev{
+				content: "";
+				position: absolute;
+				background: url(../img/prev.png) no-repeat;
+				width: 20px;
+				height: 38px;
+				top: 45%;
+    			left: -80px;
+    			cursor: pointer;
+			}
+			&__next{
+				content: "";
+				position: absolute;
+				background: url(../img/next.png) no-repeat;
+				width: 20px;
+				height: 38px;
+				left: 80%;
+    			top: 153px;
+    			cursor: pointer;
+			}
+		}
+		.purchase{
+			margin-right: 30px;
+			&__top{
+				font-size: 12px;
+				color: #7a7a7a;
+				display: flex;
+				justify-content: space-between;
+				a{
+					color: #0077a2;
+					text-decoration: underline !important;
+				}
+			}
+			&__instock{
+				position: relative;
+				font-size: 12px;
+				color: #0077a2;
+				padding: 10px 0 0 30px;
+				&:before{
+					content: "";
+					position: absolute;
+					background: url(../img/purchase-check.png) no-repeat;
+					width: 21px;
+					height: 21px;
+					left: 0;
+					top: 7px;
+				}
+			}
+			&__title-stock{
+				font-size: 14px;
+				color: #ec5b5b;
+				font-family: "open-sans-semibold";
+			}
+			.purchase-btnbuy{
+				
+				&__left{
+					position: relative;
+					float: left;
+					&:after{
+						content: "";
+						position: absolute;
+						background: url(../img/arr-buy.png) no-repeat;
+						width: 8px;
+						height: 15px;
+						left: 140px;
+   						top: 23px;
+					}
+					&__top{
+						font-size: 14px;
+						color: #a3a3a3;
+						text-decoration: line-through;
+						margin: 0;
+					}
+					&__bot{
+						font-size: 32px;
+						color: #186a8a;
+						// font-family: "OpenSansBold";
+						span{
+							color: #a4a4a4;
+							font-size: 14px;
+						}
+					}
+				}
+				&__right{
+					float: right;
+					a{
+						width: 170px;
+						display: block;
+    					text-align: center;
+    					margin: 10px auto 0;
+    					background: #0077a2;
+    					color: #fff;
+    					text-transform: uppercase;
+    					padding: 13px 0;
+    					font-family: "OpenSansBold";
+    					&:hover{
+							background: #0092c7;
+						}
+					}
+				}
+			}
+			.purchase-select{
+				clear: both;
+				select{
+					color: #6b6b6b;
+					width: 162px;
+					height: 35px;
+					outline: none;
+				}
+				a{
+					color: #6b6b6b;
+					width: 160px;
+					border: 1px solid #6b6b6b;
+					padding: 7px 30px;
+				}
+			}
+		}
+		.holder-img-card{
+			text-align: center;
+			border: 1px solid #e1e1e1;
+			border-width: 1px 0 0 1px;
+			padding: 9px;
+			&:first-child{
+				border-top: none;
+			}
+			p{
+				color: #0077a2;
+			}
+		}
+		.holder-compare-liked--f{
+			justify-content: flex-start !important;
+			margin: 20px 0 0 22px;
+		}
+		.holder-compare-liked{
+			display: flex;
+		    align-items: center;
+		    justify-content: flex-end;
+		    .compare-liked-list{
+				display: flex;
+				font-family: "pt_sans_regular";
+				&__item{
+					margin-left: 40px;
+					&:first-child{
+						margin: 0;
+					}
+				}
+				&__link--compare-icon{
+					position: relative;
+					&:before{
+						content: "";
+						position: absolute;
+						background: url(../img/compare-icon.png) no-repeat;
+						width: 14px;
+						height: 12px;
+						left: -20px;
+    					top: 2px;
+
+					}
+					&:hover:before{
+    					background: url(../img/compare-icon-hover.png) no-repeat;
+						width: 14px;
+						height: 12px;
+    					
+					}
+					&:after{
+						content: "";
+						position: absolute;
+						background: url(../img/sep.png) no-repeat;
+						width: 1px;
+						height: 12px;
+						right: -11px;
+						top: 2px;
+    					right: -11px;
+					}
+				}
+				&__link--liked-icon{
+					
+					position: relative;
+					&:before{
+						content: "";
+						position: absolute;
+						background: url(../img/liked-icon.png) no-repeat;
+						width: 12px;
+						height: 11px;
+						left: -18px;
+    					top: 2px;
+
+					}
+					&:hover:before{
+    					background: url(../img/liked-icon-hover.png) no-repeat;
+						width: 12px;
+						height: 11px;
+    					}
+					}
+				&__link{
+					display: block;
+					color: #838383;
+					text-decoration: none;
+					&:hover{
+						color: #0077a2;
+					}
+				}
+		    }
+		}	
+		.social-card{
+			display: flex;
+			margin: 20px 0 0;
+			&__title{
+				color: #838383;
+				font-size: 14px;
+			}
+			.social-card-list{
+				&__item{
+					display: inline-block;
+				}
+				&__link{
+					display: block;
+				    background: url(../img/social-card.png) no-repeat;
+				    width: 22px;
+				    height: 22px;
+				}
+				&__twit{
+					background-position: -27px 0;
+				}
+				&__tube{
+					background-position: -54px 0;
+				}
+				&__google{
+					background-position: -81px 0;
+				}
+				&__inst{
+					background-position: -108px 0;
 				}
 			}
 		}
@@ -1829,6 +2079,10 @@ html, body{
 	left: 90px;
 	position: absolute;
 	
+}
+.slider-card-bot-bg--bot{
+	position: absolute;
+	left: 90px;
 }
 .slider-card-bot-bg{
 	margin-top: 30px;
