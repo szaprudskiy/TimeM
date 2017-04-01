@@ -1247,9 +1247,9 @@ html, body{
 			margin-left: 10px;
 			padding: 30px 0;
 			width: 100%;
-			max-width: 210px;
+			max-width: 215px;
 			//margin-right: -1px;
-			 height: 349px;
+			 height: 353px;
 			border-right-width: 0;
 			position: relative;
 			border: 1px solid transparent;
@@ -1398,6 +1398,9 @@ html, body{
 
 // ====MAIN-6 END====
 // ====MAIN-7====
+.main-7--list{
+	margin: 182% 0 0 !important;
+}
 .main-7--mar{
 	margin: 31% 0 0 !important;
 }
@@ -1604,6 +1607,7 @@ html, body{
 		}
 		.purchase{
 			margin-right: 30px;
+			padding: 30px 0 0;
 			&__top{
 				font-size: 12px;
 				color: #7a7a7a;
@@ -1630,6 +1634,7 @@ html, body{
 				}
 			}
 			&__title-stock{
+				    margin: 15px 0;
 				font-size: 14px;
 				color: #ec5b5b;
 				font-family: "open-sans-semibold";
@@ -1684,6 +1689,7 @@ html, body{
 			}
 			.purchase-select{
 				clear: both;
+				padding: 10px 0px;
 				select{
 					color: #6b6b6b;
 					width: 162px;
@@ -1702,12 +1708,13 @@ html, body{
 			text-align: center;
 			border: 1px solid #e1e1e1;
 			border-width: 1px 0 0 1px;
-			padding: 9px;
+			padding: 25px 0 21px;
 			&:first-child{
 				border-top: none;
 			}
 			p{
 				color: #0077a2;
+				margin:0;
 			}
 		}
 		.holder-compare-liked--f{
@@ -1787,12 +1794,13 @@ html, body{
 		}	
 		.social-card{
 			display: flex;
-			margin: 20px 0 0;
+			margin: 24px 0 0;
 			&__title{
 				color: #838383;
 				font-size: 14px;
 			}
 			.social-card-list{
+				padding-left: 10px;
 				&__item{
 					display: inline-block;
 				}
@@ -1804,15 +1812,42 @@ html, body{
 				}
 				&__twit{
 					background-position: -27px 0;
+					&:hover{
+						background: url(../img/twit-hover.png) no-repeat;
+						width: 22px;
+						height: 22px;
+					}
+				}
+				&__fb{
+					&:hover{
+						background: url(../img/fb-hover.png) no-repeat;
+						width: 22px;
+						height: 22px;
+					}
 				}
 				&__tube{
 					background-position: -54px 0;
+					&:hover{
+						background: url(../img/tube-hover.png) no-repeat;
+						width: 22px;
+						height: 22px;
+					}
 				}
 				&__google{
 					background-position: -81px 0;
+					&:hover{
+						background: url(../img/google-hover.png) no-repeat;
+						width: 22px;
+						height: 22px;
+					}
 				}
 				&__inst{
 					background-position: -108px 0;
+					&:hover{
+						background: url(../img/inst-hover.png) no-repeat;
+						width: 22px;
+						height: 22px;
+					}
 				}
 			}
 		}
@@ -2598,6 +2633,7 @@ html, body{
 //==== CONTENT-LIST ====
 .content-list{
 	background: #fff;
+	position: absolute;
 	.content-list-left{
 		width: 285px;
 		background: #ededed;	
